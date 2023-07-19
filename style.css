@@ -1,0 +1,83 @@
+body, h1 , h2, h3, h4, p, a {  /* правила для элементов */
+  margin: 0; /* обнуление внешнего отступа */
+  font-size: 100%; /* размер шрифта */
+  font-weight: normal/* толщина шрифта */
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif; /* задание всей странице шрифта Helvetica или Arial или шрифта без зачечек*/
+}
+
+*{
+  box-sizing: border-box; /* фокус элементов на внутренний */
+}
+
+.header { /* входной экран */
+  height: 100vh; /* высота по вьюпорту*/
+  background-color: #eee; /* цвет бэкграунда */
+  background-image: url(https://pictures.s3.yandex.net/frontend-developer/free-course/cover.jpg); /* картинка бекграунда */
+  background-size: cover; /* размер изображения бэкграунда п размеру окна */
+  background-position: center; /* позиционирование изображения бэкграунда по центру */
+  text-align: center; /* высота */
+}
+
+.header-title {
+  font-size: 140px;
+  color: white;
+  text-transform: uppercase; /* пеобразование текста в заглавные буквы */
+  font-weight: 500;
+  margin: auto;
+}
+
+.overlay { /* прозрачность входного экрана */
+  width: 100%; /* ширина хедера */
+  height: 100%; /* высота хедера */
+  background-color: rgba(0, 0, 0, .5); /* прозрачность темная на 50% */
+  display: flex; /* высота */
+}
+
+.content{
+  width: 790px; 
+  font-size: 0px; /* обнуление отступов между карточками */
+  margin: 100px auto 50px;
+}
+
+.card{
+  width: 350px;
+  margin-right: 90px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  box-shadow: 4px 4px 5px rgba(250, 50, 50, .4); /* тень от карточки */
+  display: inline-block; /* высота */
+}
+
+.no-right-margin{ /* для карточек справа */
+  margin-right: 0;
+}
+
+.card-title{
+  font-size: 24px;
+  font-weight: 500;  
+  margin-bottom: 10px;
+}
+
+.card-text{
+  font-size: 16px;
+}
+
+.card-image{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer{
+  height: 300px;
+  background-color: black;
+  display: flex; /* высота */
+}
+
+.footer-author{
+  color: white;
+  font-size: 24px;
+  margin: auto;
+}
